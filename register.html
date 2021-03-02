@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+</head>
+<body>
+
+<section class="signup">
+    <div class="containerInner">
+        <div class="signup-content">
+            <div class="signup-form">
+                <h2 class="form-title">Register</h2>
+                <form  class="register-form" id="register-form" onSubmit={props.handleSubmit}>
+                    <div class="form-group">
+                        <label htmlFor="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                        <input type="text" id="name" placeholder="Your Name" >
+                    </div>
+                    <div class="form-group">
+                        <label htmlFor="email"><i class="zmdi zmdi-email"></i></label>
+                        <input type="email" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label htmlFor="pass"><i class="zmdi zmdi-lock"></i></label>
+                        <input type="password"  id="pass" placeholder="Password" >
+                    </div>
+                    <div class="form-group form-button">
+                        <button class="btn btn-primary">Register</button>
+                    </div>
+                </form>
+            </div>
+            <div class="signup-image">
+
+                <figure><img src="./images/signup-image.jpg" alt=""/></figure>
+                <a href="/chagProj/login.html" class="signup-image-link" >I am already member</a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+
