@@ -1,4 +1,4 @@
-h5, p {
+h5, h6, p {
     padding: 0;
     margin: 0
 }
@@ -567,6 +567,7 @@ label.valid:after {
 /****ROOMS****/
 .container {
     height: 100vh;
+    max-width: 1900px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -591,6 +592,12 @@ label.valid:after {
     margin-top: 10px;
 }
 
+.room h6 {
+    color: gold;
+    font-size: 14px;
+    font-weight: 200;
+}
+
 .room a {
     text-align: center;
     width: 100px;
@@ -606,9 +613,34 @@ label.valid:after {
     color: white
 }
 
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 100vh;
+    max-width: 1000px;
+}
+
+.carts {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 200px;
+    background: darkred;
+}
+
+.cart {
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+}
+
 .players {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
 }
 
@@ -617,9 +649,10 @@ label.valid:after {
     align-items: center;
     flex-direction: column;
     background: gray;
-    width: 200px;
-    height: 300px;
+    width: 150px;
+    height: 200px;
     border-radius: 10px;
+    margin-left: 10px;
 }
 
 .player p {
@@ -637,9 +670,52 @@ label.valid:after {
     margin-top: 10px;
 }
 
+.player__carts {
+    display: flex;
+}
+
+.player__cart {
+    border: 1px solid white;
+    width: 30px;
+    height: 50px;
+}
+
 .player__avatar img {
     width: 40px;
     height: 40px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.range {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-range {
+
+    padding: 0;
+    margin-right: 30px;
+    border-bottom: none;
+}
+
+.form-range:focus {
+    border-bottom: none;
 }
 
 @media screen and (max-width: 400px) {
