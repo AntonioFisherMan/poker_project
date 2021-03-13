@@ -591,7 +591,8 @@ label.valid:after {
     margin-top: 10px;
 }
 
-.room button {
+.room a {
+    text-align: center;
     width: 100px;
     height: 20px;
     color: gold;
@@ -603,6 +604,42 @@ label.valid:after {
 
 .room p {
     color: white
+}
+
+.players {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: gray;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.player p {
+    color: white;
+}
+
+.player__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.player__avatar img {
+    width: 40px;
+    height: 40px;
 }
 
 @media screen and (max-width: 400px) {
